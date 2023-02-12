@@ -1,0 +1,49 @@
+* {
+    outline: 1px solid black;
+}
+
+h2{
+    /* margin:0px; */
+}
+
+
+.container{
+    width: 900px;
+    height: 230px;
+    background-color: white;
+    border-top: 80px solid rgb(42, 187, 208 );
+    margin:10px;
+
+    position:absolute;
+    top: 80px;
+    left: 180px;
+
+    /* display: flex; */
+    /* justify-content: flex-start; */
+
+
+}
+
+.photo{
+
+}
+
+.names{
+    font-size: 40px;
+}
+
+.text{
+    width: 300px;
+    height: 140px;
+    margin:10px;
+    padding: 10px;
+ 
+    /* display:block;
+    justify-content: space-around;
+    align-items: flex-end; */
+
+    position: absolute;
+    top: 50px;
+}
+
+

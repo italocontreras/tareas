@@ -1,0 +1,30 @@
+h1{
+    color:aqua;    
+}
+span{
+    color:antiquewhite;
+} 
+#box-a button{
+    /* background-color:black; */
+    /* text-align: left; */
+    border:2px dotted green;
+    color:rgb(34, 165, 148);
+    border: 1px solid rgb(51, 204, 184);
+    border-radius: 10px;
+    height: 20px;
+    width: 100px;
+}
+#box-b button{
+    background-color:rgb(51, 204, 184);
+    color:antiquewhite;
+    border: 10px solid rgb(51, 204, 184);
+    border-radius: 50px;
+    
+}
+
+#box-c button{
+    background-color:blue;
+    color:aliceblue;
+    box-shadow: 5px 5px 5px black;
+    width: 150px;
+}

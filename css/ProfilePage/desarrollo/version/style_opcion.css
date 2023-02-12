@@ -1,0 +1,38 @@
+* {
+    outline: 1px solid black;
+}
+
+.out-up-bar{
+    height: 50px;
+    width: 100%;
+
+    position:relative;
+    top:0px;
+
+    outline: 1px solid red;
+
+    /* background-color: black; */
+}
+
+.up-bar{
+    height: 100%;
+    width: 700px;
+
+    position:absolute;
+    left:270px;
+    /* right:200px; */
+
+    outline: 1px solid magenta;
+    
+}
+
+.container{
+    height: 500px;
+    width: 700px;
+
+    position:relative;
+    left:270px;
+    top:20px;
+    
+    outline: 1px solid magenta;
+}

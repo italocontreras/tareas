@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Like</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- Container that has all page -->
+    <div class="container">
+        
+        <!-- top bar where display Network -->
+       <div class="row-1">
+            <div class = "network">
+                Network
+            </div>
+        </div> 
+        
+        <!-- bar where display Your Feed -->
+       <div class="row-2">
+            <div class = "yourfeed">
+                Your Feed
+            </div>
+              
+       </div>
+
+       <!-- section where the rest of the text appears  -->
+       <div class="row-3">
+
+            <!-- section where the photo and name of the person appears  -->
+            <div class = "col-1">
+                <div class="frame-1">
+                    <div class = "fila-out-imagen">
+                        
+                        <div class = "out-imagen">
+                            <img class="imagen" src = "./linkedin.png" alt = "Doesn't find image">
+                        </div>
+
+                    </div>
+                    <div class = "addanavatar">
+                        <a href="#">Add an avatar</a>
+                    </div>
+                    <div class="jamesdoe">
+                        James Doe
+                    </div>
+                </div>
+            </div>
+
+            <!-- section where other people's posts appear -->
+            <div class = "col-2">
+                
+                <!-- post 1 -->
+                <div class="frame-2"> 
+                    <div class = "line-1">
+                        <div class = "name">
+                            Neil M
+                        </div>
+                        <div class = "likes">
+                            <span id="mg1">9</span> like(s)
+                        </div>
+                        <div class = "fila-out-btn-likes">
+
+                            <div class = "out-btn-likes">
+                                <button class ="btn-likes" onclick = "sumaLikes(1)">Like</button>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class = "line-2">
+                        I just set up this new discord bot, let me know what you all think. <a href="#">link</a>
+                    </div>
+                </div>
+
+                <!-- post 2  -->
+                <div class="frame-3"> 
+                    <div class = "line-1">
+                        <div class = "name">
+                            Nicole K
+                        </div>
+                        <div class = "likes">
+                            <span id="mg2">12</span> like(s)
+                        </div>
+                        <div class = "fila-out-btn-likes">
+
+                            <div class = "out-btn-likes">
+                                <button class ="btn-likes" onclick = "sumaLikes(2)">Like</button>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class = "line-2">
+                            Just finished my <a href="#">next comic</a>, check it out
+                    </div>
+                </div>
+
+                <!-- post 3 -->
+                <div class="frame-4"> 
+                    <div class = "line-1">
+                        <div class = "name">
+                            Jim R
+                        </div>
+                        <div class = "likes">
+                            <span id="mg3">9</span> like(s)
+                        </div>
+                        <div class = "fila-out-btn-likes">
+
+                            <div class = "out-btn-likes">
+                                <button class ="btn-likes" onclick = "sumaLikes(3)">Like</button>
+                            </div>
+                        
+                        </div>
+                    </div>
+                    <div class = "line-2">
+                        I can't stop listening to the <a href="#">new album</a>. Who else is liking it
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>        
+        
+</body>
+</html>

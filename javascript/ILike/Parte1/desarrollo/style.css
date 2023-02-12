@@ -1,0 +1,63 @@
+/* * {
+    outline: 1px solid black;
+} */
+
+
+/* container that has all divs of the solution */
+
+.container{
+    width: 540px;
+
+    height: 180px;
+
+    padding: 30px;
+
+    padding-top: 6px;
+
+    padding-bottom: 6px;
+
+    position: relative;
+
+    top:30px;
+    
+    left:150px;
+
+    outline: 3px solid black;
+    
+}
+
+/* first part of the text where the botton appears */
+
+.row-1{
+    display: flex;
+    align-items: center;
+    margin-top:15px;
+    margin-bottom:15px;
+}
+
+
+.someuser{
+    font-size: 30px;
+    flex:2;
+    
+}
+
+.threelikes{
+    font-size: 30px;
+    flex:1;
+}
+
+.btn-like{
+    font-size: 30px;
+    flex:1;
+    box-shadow: 6px 6px 6px black;
+    background-color: rgba(255, 196, 0, 0.799);
+}
+
+
+/* second part of the text */
+
+.row-2{
+    font-size: 30px;
+} 
+

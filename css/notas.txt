@@ -1,0 +1,3 @@
+para mandar tareas hacerlo en el siguiente formato:
+
+Apellido_Nombre_VS_nombre_de_la_tarea.zip

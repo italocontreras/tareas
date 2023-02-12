@@ -1,0 +1,475 @@
+/* * {
+    outline: 1px solid black;
+} */
+
+
+/* top navigation bar */
+
+.out-up-bar{
+    height: 50px;
+    width: 100%;
+
+    position:relative;
+    top:0px;
+
+    background-image: url("./fondo_imagen.png");
+}
+
+.up-bar{
+    height: 100%;
+    width: 670px;
+
+    position:absolute;
+    left:270px;
+
+    color: white;
+    
+}
+
+
+.left-up-bar{
+    
+    height: 100%;
+    width: 470px;
+
+    position:absolute;
+    left:0px;
+
+    display:flex;
+
+
+}
+
+.profile,.home,.myprofile,.findconnections{
+
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+
+
+}
+
+.profile{
+    font-size:25px;
+    width:100px;
+    font-weight: bold;
+}
+
+.home{
+    font-size:17px;
+    width:60px;
+}
+
+.myprofile{
+    font-size:17px;
+    width:100px;
+    font-weight: bold;
+}
+
+.findconnections{
+    font-size:17px;
+    width:150px;
+}
+
+.right-up-bar{
+
+    width: 120px;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+
+    position: absolute;
+    right: 0px;
+}
+
+.out-signout{
+    width: 100%;
+}
+
+.signout{
+    font-size:17px;
+    width: 100%;
+    
+    color:white;
+    background-color: rgb(42, 187, 208);
+}
+
+
+/* container that has all the frames */
+
+.container{
+    height: 500px;
+
+    width: 670px;
+
+    position:relative;
+    left:270px;
+    top:20px;
+    
+}
+
+/* frame where user information appear */
+
+.userid{
+
+    height: 290px;
+    width: 400px;
+
+    position:absolute;
+    top:0px;
+    left:0px;
+
+    outline: 2px solid rgb(191, 198, 200);
+
+}
+
+.up-userid{
+
+    height: 80px;
+    width: 100%;
+
+    background-color: rgb(42, 187, 208);    
+}
+
+.bottom-userid{
+
+    height: 210px;
+    width: 100%;
+
+}
+
+.text{
+    width: 320px;
+    height: 160px;
+    margin:10px;
+
+ 
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    
+}
+
+.names,.row{
+    width:100%;
+    margin:10px;
+}
+
+.names{
+    font-size: 25px;
+}
+
+.row{
+    font-size: 17px;
+}
+
+.photo{
+    position: fixed;
+    top: 110px;
+    left: 290px;
+    width: 80px;
+    height: 90px;
+    border-radius: 80%;
+    border: 1px solid rgb(128, 128, 128)
+}
+
+/* frame where Connection Requests information appears */
+
+.frame{
+    height: 160px;
+
+    width: 250px;
+
+    position:absolute;
+    right: 0px;
+
+    outline: 2px solid rgb(191, 198, 200);
+    
+}
+
+
+.up-frame{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    height: 50px;
+    width: 100%;
+
+    background-image: url("./fondo_imagen.png");
+}
+
+
+.up-frame-in{
+    height: 100%;
+    width: 220px;
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+}
+
+
+.out-number{
+    flex:1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.title{
+    font-size: 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    flex:5;
+
+}
+
+ .bottom-frame{
+
+    height: 110px;
+
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.bottom-frame-in{
+
+    height: 90%;
+    
+    width: 220px;
+    display:flex;
+    flex-direction: column;
+
+}
+
+
+.fila{
+    height: 43px;
+    
+    width: 100%;
+
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    margin-bottom: 5px;
+
+}
+
+
+.afuera-foto{
+    
+    height: 100%;
+
+    flex:1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.foto{
+    width: 100%;
+    height: 100%;
+    
+
+    border-radius: 100%;
+}
+
+.parrafo{
+    flex:2;
+
+    padding-left: 20px;
+}
+
+.conjunto{
+    height: 100%;
+
+    flex:1.5;
+    display:flex;
+
+}
+
+.afuera-check{
+    height: 100%;
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+    flex:1;
+}
+
+
+.check,.equis{
+    width: 30px;
+    height: 30px;
+}
+
+.afuera-equis{
+    height: 100%;
+    width: 30px;
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+    flex:1;
+}
+
+/* frame where Your Connections information appears */
+
+.frame-2{
+    height: 300px;
+
+    width: 250px;
+
+    position:absolute;
+    right: 0px;
+
+    top:170px;
+
+    outline: 2px solid rgb(191, 198, 200);
+
+
+}
+
+
+.bottom-frame-2{
+    height: 210px;
+
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.bottom-frame-2-in{
+
+    height: 90%;
+    
+    width: 220px;
+
+    display:flex;
+    flex-direction: column;
+}
+
+
+.pie{
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    outline: 2px solid rgb(191, 198, 200);
+}
+
+.pie-in{
+
+    height: 90%;
+    width: 220px;
+
+    display: flex;
+    align-items: flex-start;
+    
+    padding-top: 20px;
+}
+
+/* frame where user education information appears */
+
+.frame-3{
+
+    height: 160px;
+    width: 400px;
+
+    position:absolute;
+    top:310px;
+    left:0px;
+
+    
+    
+    outline: 2px solid rgb(191, 198, 200);
+}
+
+.frame-3-up{
+
+    height: 40px;
+    width: 100%;
+
+    background-image: url("./fondo_imagen.png");
+
+}
+
+.frame-3-up-in{
+
+    height: 20px;
+    width: 350px;
+
+    font-size: 18px;
+
+    padding-left: 20px;
+    padding-top: 10px;
+
+    color: white;
+}
+
+.frame-3-bottom{
+
+    height: 120px;
+    width: 100%;
+
+}
+
+.frame-3-bottom-in{
+
+    height: 90%;
+    width: 350px;
+
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.row-1,.row-2,.row-3{
+    height: 25px;
+    width: 350px;
+
+    font-size: 18px;
+
+    margin-bottom: 5px;
+}
+
+.row-1{
+    font-weight: bold;
+}
+
+.row-2{
+    font-size: 16px;
+    color: rgb(119, 123, 124);
+}
+
+.row-3{
+    font-size: 17px;
+
+}

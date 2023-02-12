@@ -1,0 +1,202 @@
+/* * {
+    outline: 1px solid black;
+} */
+
+
+/* Container that has all page */
+
+.container{
+    height: 560px;
+
+    width: 650px;
+
+    position: relative;
+    top:0px;
+    left:280px;
+
+}
+
+/* top bar where display Network */
+
+.row-1{
+    height: 50px;
+
+    width: 100%;
+
+    background-image: url("./fondo_imagen.png");
+
+
+}
+
+
+.network{
+    font-size: 40px;
+    color:white;
+
+    position: absolute;
+    left:0px;
+
+    padding-left: 15px;
+}
+
+/* bar where display Your Feed */
+
+.row-2{
+    height: 50px;
+
+    width: 100%;
+
+    
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+}
+
+.yourfeed{
+    padding-top: 10px;
+    font-size: 40px;
+}
+
+
+/* section where the rest of the text appears */
+
+.row-3{
+    height: 500px;
+
+    width: 100%;
+    
+    display: flex;
+}
+
+/* section where the photo and name of the person appears */
+
+.col-1{
+    height: 400px;
+    width: 200px;
+    padding-top: 15px;
+}
+
+.frame-1{
+    height: 220px;
+    margin-right: 20px;
+
+    outline: 1.5px solid black;
+
+}
+
+.fila-out-imagen,.addanavatar,.jamesdoe{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.fila-out-imagen{
+    
+    height:110px;
+
+    padding-top: 5px;
+}
+
+.out-imagen{
+    height:85px;
+    width:85px;
+
+
+}
+
+.imagen{
+    width:100%;
+    height:100%;
+    border-radius: 80%;  
+    border: 1px solid black 
+}
+
+.addanavatar{
+    height: 45px;
+    font-size: 23px;
+}
+
+.jamesdoe{
+    height: 45px;
+
+    font-size: 23px;
+}
+
+/* section where other people's posts appear */
+
+.col-2{
+    height:400px;
+    width: 490px;
+
+}
+
+/* post 1,post 2,post 3 */
+
+.frame-2,.frame-3,.frame-4{
+    
+    height: 100px;
+
+    padding-top: 5px;
+    padding-bottom: 10px;
+    
+    padding-right: 25px;
+    padding-left: 25px;
+
+    margin-top: 15px;
+
+    outline: 1.5px solid black;
+}
+
+.line-1,.line-2{
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.line-1{
+    display: flex;
+
+    font-size: 26px;
+}
+
+.name{
+    flex:2;
+
+}
+
+#mg1,#mg2,#mg3{
+    padding-right: 5px;
+}
+
+.likes{
+    flex:1;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+.fila-out-btn-likes{
+    flex:1;
+}
+
+.out-btn-likes{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.btn-likes{
+    font-size: 22px;
+    box-shadow: 6px 6px 6px black;
+    background-color: rgba(255, 196, 0, 0.799);
+}
+
+.line-2{
+    font-size: 25px;
+}

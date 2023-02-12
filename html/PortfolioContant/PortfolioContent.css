@@ -1,0 +1,38 @@
+
+/* div{
+    border-style: dotted;
+    border-width: 1px;
+    border-color: red;
+}  */
+  
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 70%;
+}
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+#box-a,#box-b,#box-c{
+    width: 22%;
+    display: inline-block;
+}
+#box-d{
+    width: 22%;
+    display: inline-block;
+}
+#box-e,#box-g{
+    width:40px;
+    display: inline-block;
+}
+#box-f{
+    width:10px;
+    display: inline-block;
+}
+
+#box-1,#box-2{
+    width: 22%;
+    display: inline-block;
+}

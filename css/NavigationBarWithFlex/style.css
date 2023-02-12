@@ -1,0 +1,47 @@
+/* * {
+    outline: 1px solid black;
+} */
+
+.nav{
+    display: flex;
+    align-items: center;    
+    justify-content:space-between;
+    background-color: rgba(10, 10, 10, 0.847);
+}
+
+.nav-title{
+    font-family: 'Roboto', sans-serif;
+    margin:20px;
+}
+
+.nav-links{
+    width: 450px;
+    display: flex;
+
+    align-items: center;
+    justify-content: space-around;    
+    margin:20px;
+
+}
+
+a:link, a:visited, a:active {    
+    text-decoration:none;
+    color:rgba(255, 255, 255, 0.734);
+    font-family: 'Roboto', sans-serif;
+}
+
+a.active{
+    color:white;
+}
+
+h1{
+    color:white;
+}
+
+.btn{
+    background-color:rgb(86, 209, 229);
+    color:white;
+    box-shadow: 3px 3px black;
+    padding-left:10px;
+    padding-right:10px;
+}
