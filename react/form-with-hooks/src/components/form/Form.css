@@ -1,0 +1,35 @@
+.form{
+
+    height: 45px;
+    width: 500px;
+
+    margin-top:15px;
+    margin-bottom:15px;
+
+
+    background-color: rgb(209, 215, 216);
+
+    display: flex;
+
+}
+
+.form label{
+    flex:2;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.out-input{
+    flex:5;
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form input{
+    height: 20px;
+    width: 320px;
+}

@@ -1,0 +1,22 @@
+/* * {
+  outline: 1px solid black;
+} */
+
+.App {
+  height: 550px;
+  width: 500px;
+
+  position: relative;
+  top:20px;
+  left:380px;
+
+
+
+}
+
+.form-component{
+  height: 280px;
+  width: 500px;
+
+
+}
