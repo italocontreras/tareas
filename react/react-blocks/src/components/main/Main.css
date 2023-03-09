@@ -1,0 +1,8 @@
+.mainContent{
+    height: 400px;
+    width: 700px;
+    background-color: red;
+    display: inline-block;
+    vertical-align:top;
+    margin:auto;
+}
