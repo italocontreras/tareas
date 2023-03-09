@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Arrow Functions</title>
+</head>
+<body id="body">
+
+    <script>
+
+        class Ninja {
+            constructor (name,health,speed,force){
+                this.name = name;
+                this.health = health;
+                this.speed = 3;
+                this.force = 3;
+            }
+            
+            sayName(){
+                return "Ninja's name is " + this.name 
+            }
+
+            showStats(){
+                return "Name: " + this.name+ ", Force: " + this.force + ", Speed: " + this.speed + ", Health: " + this.health
+            }
+
+            drinkSake(){
+                this.health = this.health + 10
+                
+            }
+        }
+
+        const ninja1 = new Ninja("Hyabusa");
+
+        
+    </script>
+</body>
+</html>
