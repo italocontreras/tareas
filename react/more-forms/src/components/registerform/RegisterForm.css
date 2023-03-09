@@ -1,0 +1,41 @@
+.form{
+    height: 50px;
+    width: 480px;
+    
+    background-color: rgb(209, 215, 216);
+
+    display: flex;
+
+}
+
+
+.form label{
+    flex:2;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.out-input{
+    flex:5;
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.form input{
+    height: 25px;
+    width: 320px;
+}
+
+.form-group{
+
+    height: 40px;
+    width: 500px;
+
+    margin:40px;
+}

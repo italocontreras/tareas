@@ -1,0 +1,16 @@
+/* * {
+  outline: 1px solid black;
+} */
+
+.App {
+  height: 400px;
+  width: 500px;
+
+  position: relative;
+  top:60px;
+  left:380px;
+
+
+
+}
+
