@@ -1,0 +1,34 @@
+/* * {
+    outline: 1px solid black;
+} */
+
+
+.container{
+    height: 40px;
+}
+
+
+
+.crossedout{
+    text-decoration: line-through
+}
+
+
+.map-container,.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container{
+    margin:10px
+}
+
+.map-container{
+    margin:20px;
+}
+
+.btn-dark{
+    margin-left: 15px;
+}
