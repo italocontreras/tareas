@@ -1,0 +1,21 @@
+* {
+    /* outline: 1px solid red; */
+}
+
+.main{
+    width: 680px;
+    height: 450px;
+    /* position:relative; */
+    top: 0px;
+    left:300px;
+}
+
+.form{
+    height: 300px;
+    outline: 1px solid red;
+}
+
+.list{
+    height: 300px;
+    outline: 1px solid green;
+}

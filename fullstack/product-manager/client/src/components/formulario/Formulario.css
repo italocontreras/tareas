@@ -1,0 +1,78 @@
+/* * {
+    outline: 1px solid black;
+} */
+
+.Formulario{
+    height: 300px;
+    width: 500px;
+    position: relative;
+    left: 300px;
+
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    height: 40px;
+    width: 500px;
+    margin-bottom: 10px;
+}
+
+.group{
+    height: 60px;
+    width: 500px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-group{
+    height: 40px;
+    flex: 2;
+    display:flex;
+    /* justify-content: center; */
+    padding-left: 20px;
+    align-items:center
+}
+
+
+.data-group{
+    height: 40px;
+    flex: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type=text]{
+    height:75%;
+    width:90%;
+
+}
+
+.login{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-login{
+    width: 200px;
+}
+
+/* .input-product-manager{
+    height: 30px;
+
+    background-color: rgb(178, 181, 186);
+} */
+
+/* .title{
+    position:relative;
+    left: 5px;
+} */
+
+/* .input-in{
+    position:relative;
+    right: 5px;
+} */
