@@ -1,5 +1,5 @@
 import './AuthorsList.css'
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useState, useEffect } from 'react';
 import axios from 'axios'
 
@@ -11,6 +11,7 @@ import {BrowserRouter, Route, Routes, Link} from 'react-router-dom'
 
 function AuthorsList() {
 
+    const navigate = useNavigate() 
 
     const [authors, setAuthors] = useState([])
 
@@ -25,19 +26,20 @@ function AuthorsList() {
         []
     )
 
-    async function eliminate(_id) {
+    async function eliminateAuthor(_id) {
         console.log("delete")
-        // await axios.delete(window.$api + '/authors/' + _id)
-        // const newAuthors = authors.filter(aut => aut._id !== _id)
-        // setAuthors(newAuthors)
+        await axios.delete(window.$api + '/authors/delete/' + _id)
+        const newAuthors = authors.filter(aut => aut._id !== _id)
+        setAuthors(newAuthors)
     }
 
-    async function edit(_id) {
-        console.log("edit")
-        // await axios.delete(window.$api + '/authors/' + _id)
-        // const newAuthors = authors.filter(aut => aut._id !== _id)
-        // setAuthors(newAuthors)
+    async function editAuthor(_id) {
+        console.log("update pirate de authoris list")
+        console.log(_id)
+        navigate('/edit/'+_id)        
+        
     }
+
 
     return (
         <div className='authors-list'>
@@ -66,9 +68,9 @@ function AuthorsList() {
                         <tr key={author._id}>
                         <td>{author.name}</td>
                         <td>
-                            <button onClick={() => edit(author._id)} className="btn btn-primary">Edit</button>
+                            <button onClick={() => editAuthor(author._id)} className="btn btn-primary">Edit</button>
                             
-                            <button onClick={() => eliminate(author._id)} className="btn btn-danger">Eliminar</button>
+                            <button onClick={() => eliminateAuthor(author._id)} className="btn btn-danger">Eliminar</button>
                             
 
                         </td>

@@ -12,6 +12,18 @@ router.get('/authors', async (req, res) => {
 })
 
 
+router.get('/authors/:id', async (req, res) => {
+    console.log("dentro del get id")
+    const id = req.params.id
+    try {
+        const author = await Author.findOne({_id: id})
+        return res.json(author)
+    } catch(error) {
+        console.log(error)
+        return res.json({error}, 404)
+    }
+})
+
 router.post('/authors/new', async (req, res) => {
     try {
         const new_author = await Author.create({

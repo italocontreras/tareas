@@ -52,11 +52,11 @@ function CreateAuthor() {
             <div className='form-input'>
             <form onSubmit={create}>
                 <div className="form-group">
-                    <label for="exampleInputEmail1">Name</label>
-                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" onChange={ev => setName(ev.target.value)}/>
+                    <label htmlFor="exampleInputEmail1">Name</label>
+                    <input type="text" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" onChange={ev => setName(ev.target.value)}/>
                   
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" className="btn btn-primary">Submit</button>
             </form>
 
             </div>
