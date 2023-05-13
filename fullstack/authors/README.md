@@ -7,7 +7,7 @@ Let's create an app where users submit their favorite authors. List all authors 
 
 ## Technologies:
 
-Node, express, javascript, mongodb, react
+Node, Express, Javascript, Mongodb, React
 
 ## Preview:
 
