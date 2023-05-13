@@ -1,4 +1,4 @@
-// import { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 // import axios from 'axios'
 
@@ -8,9 +8,36 @@ import List from '../list/List';
 import './Main.css'
 
 
+import axios from 'axios'
+
+// import { useState } from 'react';
+
 function Main() {
 
+    const [products, setProducts] = useState([]);
+
+    // function updateProductsList(newProduct) {
+    //     setProducts([...products, newProduct]);
+    // }
+
+    // const [products, setProducts] = useState([])
   
+    useEffect(
+      () => {
+        axios.get('http://localhost:8000/api/products')
+        .then(resp => {
+            console.log("resp")
+            console.log(resp)
+            setProducts(resp.data)
+        })
+      },
+      []
+    )
+
+    const handleProductAdded = (newProduct) => {
+        setProducts([...products, newProduct]);
+    };
+
     return (
         <div className='Main'>
             {
@@ -20,10 +47,13 @@ function Main() {
                 aca va el main
             </div> */}
             <div className='form'>
-                <Form></Form>
+                {/* <Form></Form> */}
+                {/* <Form updateProductsList={updateProductsList} /> */}
+                <Form onProductAdded={handleProductAdded} />
             </div>
             <div className='list'>
-                <List></List>
+                {/* <List></List> */}
+                <List products={products} />
             </div>
             
         </div> 

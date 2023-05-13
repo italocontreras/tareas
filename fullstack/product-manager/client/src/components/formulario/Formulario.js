@@ -10,7 +10,7 @@ import InputGroup from 'react-bootstrap/InputGroup';
 
 import './Formulario.css'
 
-function Formulario() {
+function Formulario(props) {
 
     const [title, setTitle] = useState('')
     const [price, setPrice] = useState('')
@@ -30,7 +30,18 @@ function Formulario() {
             description:description
           })
           alert('´Producto agregado correctamente')
-          navigate('/')
+          // setTitle("");
+          // console.log("line 34")
+          // setPrice("");
+          // setDescription("");
+          // navigate('/')
+          // if (props.updateProductsList) {
+          //   props.updateProductsList(newProduct.data);
+          // }
+          props.onProductAdded(newProduct.data);
+          setTitle('');
+          setPrice('');
+          setDescription('');
         }
         catch(err) {
           console.log("va por el catch")
@@ -50,15 +61,15 @@ function Formulario() {
 
                 <div className='group'>
                     <div className='title-group'>Title</div>
-                    <div className='data-group'><input required type="text" name="textname" onChange={ev => setTitle(ev.target.value)}/></div>
+                    <div className='data-group'><input required type="text" name="textname" value={title} onChange={ev => setTitle(ev.target.value)}/></div>
                 </div>
                 <div className='group'>
                     <div className='title-group'>Price</div>
-                    <div className='data-group'><input required type="text" name="textname" onChange={ev => setPrice(ev.target.value)}/></div>
+                    <div className='data-group'><input required type="text" name="textname" value={price} onChange={ev => setPrice(ev.target.value)}/></div>
                 </div>
                 <div className='group'>
                     <div className='title-group'>Description</div>
-                    <div className='data-group'><input required type="text" name="textname" onChange={ev => setDescription(ev.target.value)}/></div>
+                    <div className='data-group'><input required type="text" name="textname" value={description} onChange={ev => setDescription(ev.target.value)}/></div>
                 </div>    
                 <div class="login">
                     <button class ="btn-login" onClick={createProduct}>Create</button>
