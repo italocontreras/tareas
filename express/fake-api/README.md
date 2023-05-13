@@ -1,6 +1,6 @@
 # Fake Api
 
-## Description
+## Description: 
 
 let's create an API that generates a random user on a GET request, , the following tasks were done
 
@@ -13,9 +13,9 @@ let's create an API that generates a random user on a GET request, , the followi
 
 ## Technologies: 
 
-node, express, javascript, faker
+Node, express, javascript, faker
 
-## Preview
+## Preview:
 
 
 ![alt text](./preview.PNG "Image Title")
