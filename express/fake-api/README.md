@@ -13,7 +13,7 @@ let's create an API that generates a random user on a GET request, , the followi
 
 ## Technologies: 
 
-Node, express, javascript, faker
+Node, Express, Javascript, Faker
 
 ## Preview:
 
