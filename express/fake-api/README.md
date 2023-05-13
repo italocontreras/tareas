@@ -16,6 +16,6 @@ Technologies: node, express, javascript, faker
 ## Preview
 
 
-![alt text](./preview.png "Image Title")
+![alt text](./preview.PNG "Image Title")
 
-![alt text](./preview2.png "Image Title")
+![alt text](./preview2.PNG "Image Title")
