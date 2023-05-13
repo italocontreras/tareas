@@ -1,6 +1,6 @@
 # Jokes Api
 
-## Description
+## Description:
 
 let's create an API that manipulate a joke, the following tasks were done
 
@@ -17,9 +17,9 @@ let's create an API that manipulate a joke, the following tasks were done
 
 ## Technologies: 
 
-node, express, javascript, mongodb
+Node, Express, Javascript, Mongodb
 
-## Preview
+## Preview:
 
 
 ![alt text](./preview.PNG "Image Title")
