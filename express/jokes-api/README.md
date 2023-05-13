@@ -15,7 +15,9 @@ let's create an API that manipulate a joke, the following tasks were done
 - Export a function to delete a joke
 
 
-Technologies: node, express, javascript, mongodb
+## Technologies: 
+
+node, express, javascript, mongodb
 
 ## Preview
 
