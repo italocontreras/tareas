@@ -1,15 +1,15 @@
 # Jokes Api
 
-## Description
+## Description:
 
 Let's create an app where users submit their favorite authors. List all authors on the first page. From there, the user can click a button to edit or delete each author. 
 
 
-## Technologies: 
+## Technologies:
 
-node, express, javascript, mongodb, react
+Node, express, javascript, mongodb, react
 
-## Preview
+## Preview:
 
 List view:
 
