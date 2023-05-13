@@ -11,7 +11,9 @@ let's create an API that generates a random user on a GET request, , the followi
 - Creating an api path "/api/user/company" that returns both a new user and a new company
 
 
-Technologies: node, express, javascript, faker
+## Technologies: 
+
+node, express, javascript, faker
 
 ## Preview
 
