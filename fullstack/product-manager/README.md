@@ -1,8 +1,9 @@
-# Authors
+# Product Manager
 
 ## Description:
 
-Let's create an app where users submit their favorite authors. List all authors on the first page. From there, the user can click a button to edit or delete each author. 
+Let's create an application in
+where a list of products is shown, where you can also delete, add, update and see details of it
 
 
 ## Technologies:
@@ -11,18 +12,21 @@ Node, Express, Javascript, Mongodb, React
 
 ## Preview:
 
-Adding a product:
+Add a product:
 
 
 ![alt text](./img/main.PNG "Image Title")
 
 ![alt text](./img/main2.PNG "Image Title")
 
-Deleting a product:
+Delete a product:
 
-![alt text](./preview2.PNG "Image Title")
+![alt text](./img/delete.PNG "Image Title")
 
 Product Detail:
 
-![alt text](./detail.PNG "Image Title")
+![alt text](./img/detail.PNG "Image Title")
 
+Update product information:
+
+![alt text](./img/update.PNG "Image Title")
