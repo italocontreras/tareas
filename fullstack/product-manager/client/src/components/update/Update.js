@@ -1,12 +1,17 @@
+// import { useState, useEffect } from 'react';
+
+// import axios from 'axios'
 import { useState, useEffect } from 'react';
 import { useNavigate } from "react-router-dom";
 
+import { useParams } from "react-router-dom";
 
 import axios from 'axios'
 
-function Product() {
+import './Update.css'
 
-    // const type = new URLSearchParams(location.search).get('type');
+function Update() {
+
     const [product, setProduct] = useState({});
     
 
@@ -16,31 +21,9 @@ function Product() {
     const [price, setPrice] = useState('')
     const [description, setDescription] = useState('')
 
-    // const url = new URL('http://localhost:3000/product/6474d40ff8aa9655a07a0608');
-    const url = window.location.href;
-    // const path = url.pathname;
-    const id = url.split('/').pop();
+    const {id} = useParams();
 
-    console.log("url")
-    console.log(url); // 6474d40ff8aa9655a07a0608
-
-
-    console.log("id")
-    console.log(id); 
-
-    async function goHome (ev) {
-        ev.preventDefault()
-        console.log("updateProduct")
-
-        try {
-
-
-          navigate('/')
-        
-        } catch (error) {
-        }
-    }
-
+    // http://localhost:8000/api/products/new
     useEffect(() => {
         const fetchProduct = async () => {
           try {
@@ -58,6 +41,40 @@ function Product() {
     
         fetchProduct();
     }, [id]);
+
+    async function goHome (ev) {
+        ev.preventDefault()
+        console.log("updateProduct")
+        // console.log({name, position});
+        try {
+
+
+          navigate('/')
+        
+        } catch (error) {
+            // console.error("Error updating product:", error);
+        }
+    }
+
+    async function updateProduct (ev) {
+        ev.preventDefault()
+        console.log("updateProduct")
+        // console.log({name, position});
+        try {
+
+
+          await axios.put('http://localhost:8000/api/products/edit/' + id, {
+            title: title,
+            price:price,
+            description:description
+          })
+          alert('Product modificado correctamente')
+          navigate('/')
+        
+        } catch (error) {
+            console.error("Error updating product:", error);
+        }
+    }
 
     return (
     <div>
@@ -78,6 +95,7 @@ function Product() {
                 <div className='data-group'><input required type="text" name="textname" value={description} onChange={ev => setDescription(ev.target.value)}/></div>
             </div>    
             <div class="login">
+                <button class ="btn-login" onClick={updateProduct}>Update</button>
                 <button class ="btn-login" onClick={goHome}>Home</button>
             </div>
         </div>
@@ -85,4 +103,4 @@ function Product() {
     );
   }
   
-  export default Product;
+  export default Update;

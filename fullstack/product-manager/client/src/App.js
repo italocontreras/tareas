@@ -10,7 +10,7 @@ import {BrowserRouter, Route, Routes} from 'react-router-dom'
 
 import Main from './components/main/Main';
 import Product from './components/product/Product';
-
+import Update from './components/update/Update';
 
 function App() {
   return (
@@ -20,6 +20,8 @@ function App() {
           <Routes>
             <Route path='/' element={<Main />}></Route>
             {/* <Route path='/product/:id' element={<Product />}></Route> */}
+            <Route path='/edit/:id' element={<Update/>}></Route>
+            <Route path='/product/:id' element={<Product/>}></Route>
           </Routes>
         </header>
       </div>

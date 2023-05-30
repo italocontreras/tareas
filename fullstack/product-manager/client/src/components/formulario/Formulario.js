@@ -30,14 +30,6 @@ function Formulario(props) {
             description:description
           })
           alert('´Producto agregado correctamente')
-          // setTitle("");
-          // console.log("line 34")
-          // setPrice("");
-          // setDescription("");
-          // navigate('/')
-          // if (props.updateProductsList) {
-          //   props.updateProductsList(newProduct.data);
-          // }
           props.onProductAdded(newProduct.data);
           setTitle('');
           setPrice('');

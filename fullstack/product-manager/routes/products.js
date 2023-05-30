@@ -25,6 +25,35 @@ router.post('/api/products/new', async (req, res) => {
     }
 })
 
+router.get('/api/products/:id', async (req, res) => {
+    console.log("dentro del get id")
+    const id = req.params.id
+    try {
+        const product = await Product.findOne({_id: id})
+        return res.json(product)
+    } catch(error) {
+        console.log(error)
+        return res.json({error}, 404)
+    }
+})
+
+router.put('/api/products/edit/:id', async (req, res) => {
+
+    const id = req.params.id  
+    const product = await Product.updateOne(
+        {_id: id},
+        { ...req.body }
+    )
+    return res.json({})
+})
+
+router.delete('/api/products/delete/:id', async (req, res) => {
+    const id = req.params.id
+
+    await Product.findOneAndRemove({_id: id})
+    res.json({})
+})
+
 
 
 module.exports = router

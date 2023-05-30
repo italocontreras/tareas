@@ -38,6 +38,10 @@ function Main() {
         setProducts([...products, newProduct]);
     };
 
+    const handleProductDeleted = (updatedProducts) => {
+        setProducts(updatedProducts);
+    };
+
     return (
         <div className='Main'>
             {
@@ -53,7 +57,7 @@ function Main() {
             </div>
             <div className='list'>
                 {/* <List></List> */}
-                <List products={products} />
+                <List products={products} onProductDeleted={handleProductDeleted}/>
             </div>
             
         </div> 
