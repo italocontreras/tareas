@@ -9,7 +9,7 @@ Let's create an app where users submit their favorite authors. List all authors 
 
 Node, Express, Javascript, Mongodb, React
 
-## Preview:
+## Evidences:
 
 List view:
 
