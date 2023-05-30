@@ -10,7 +10,7 @@ where a list of products is shown, where you can also delete, add, update and se
 
 Node, Express, Javascript, Mongodb, React
 
-## Preview:
+## Evidences:
 
 Add a product:
 
