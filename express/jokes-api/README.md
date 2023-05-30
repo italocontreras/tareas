@@ -19,7 +19,7 @@ let's create an API that manipulate a joke, the following tasks were done
 
 Node, Express, Javascript, Mongodb
 
-## Preview:
+## Evidences:
 
 
 ![alt text](./preview.PNG "Image Title")
