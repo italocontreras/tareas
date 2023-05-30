@@ -15,7 +15,7 @@ let's create an API that generates a random user on a GET request, , the followi
 
 Node, Express, Javascript, Faker
 
-## Preview:
+## Evidences:
 
 
 ![alt text](./preview.PNG "Image Title")
